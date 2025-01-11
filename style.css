@@ -1,0 +1,330 @@
+@font-face {
+    font-family: Creatball;
+    src: url(./font/CreatballRegular.ttf);
+} 
+
+body{
+    margin:0;
+    
+    
+}
+
+.slider{
+    background-color: #121212;
+    width: 100vw;
+    max-width: 100vw;
+    height: 940px;
+    margin: auto ;
+    position: relative;
+    overflow: hidden;
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+
+    /*Время перехода слайда*/
+    transition: 1s;
+}
+
+.item .background_image{
+    width: 100vw;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+.item .box_0{
+    position: absolute;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 20%;
+    width: 20%;
+    height: 60%;
+    /*border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+}
+.item .box_0 p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 60%;
+    position: absolute;
+    font-family: 'Creatball';
+    color: #fff;
+    font-size: 30px;
+}
+
+.item .box_0 img{
+   /* border: 1px solid red;*/
+    max-width: 55%; 
+    height: fit-content;  
+}
+
+.item .box_0 button{
+    width: 165px;
+    height: 46px;
+    top: 85%;
+    position: absolute;
+    background-color: #fff5;
+    border: 2px solid #fff;
+    font-family: 'Creatball';
+    font-size: 22px;
+    padding-top: 7px;
+    color: #fff;  
+}
+
+.item .box_1{
+    position: absolute;
+    left: 17%;
+    transform:translateX(-50%);
+    top: 20%;
+    width: 20%;
+    height: 60%;
+   /* border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+}
+
+.item .box_1 img{
+    /*border: 1px solid red;*/
+    max-width: 55%; 
+    height: fit-content; 
+}
+
+.item .box_1 p{
+    text-align: center;
+    top: 60%;
+    position: absolute;
+    font-family: 'Creatball';
+    color: #fff;
+    font-size: 30px;
+}
+.item .box_1 button{
+    width: 165px;
+    height: 46px;
+    top: 85%;
+    position: absolute;
+    background-color: #fff5;
+    border: 2px solid #fff;
+    font-family: 'Creatball';
+    font-size: 22px;
+    padding-top: 7px;
+    color: #fff;  
+}
+
+.item .box_2{
+    position: absolute;
+    left: 83%;
+    transform:translateX(-50%);
+    top: 20%;
+    width: 20%;
+    height: 60%;
+    /*border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+}
+
+.item .box_2 img{
+    /*border: 1px solid red;*/
+    max-width: 55%; 
+    height: fit-content; 
+}
+
+.item .box_2 p{
+    text-align: center;
+    top: 60%;
+    position: absolute;
+    font-family: 'Creatball';
+    color: #fff;
+    font-size: 30px;
+}
+.item .box_2 button{
+    width: 165px;
+    height: 46px;
+    top: 85%;
+    position: absolute;
+    background-color: #fff5;
+    border: 2px solid #fff;
+    font-family: 'Creatball';
+    font-size: 22px;
+    padding-top: 7px;
+    color: #fff;  
+}
+
+
+@media only screen and (max-width:1200px){
+    
+    .item .box_0 img{
+        
+        max-width: 100%; 
+    }
+    .item .box_1 img{
+        
+        max-width: 100%; 
+    }
+    .item .box_2 img{
+        
+        max-width: 100%; 
+    }
+    .item .box_0 button{
+        top: 98%;
+    }
+    .item .box_1 button{
+        top: 98%;
+    }
+    .item .box_2 button{
+        top: 98%;
+    }
+}
+@media only screen and (max-width:700px){
+    .item .box_0{  
+        height: 50%;   
+    }
+    .item .box_0 img{
+        
+        max-width: 120%; 
+    }
+    .item .box_1{  
+        height: 50%;   
+    }
+    .item .box_1 img{
+        
+        max-width: 120%; 
+    }
+    .item .box_2{  
+        height: 50%;   
+    }
+    .item .box_2 img{
+       
+        max-width: 120%; 
+    }
+    .item .box_0 button{
+        top: 135%;
+    }
+    .item .box_1 button{
+        top: 135%;
+    }
+    .item .box_2 button{
+        top: 135%;
+    }
+}
+@media only screen and (max-width:500px){
+    .item .box_0{
+        height: 40%; 
+    }
+    .item .box_0 img{
+        
+        max-width: 120%; 
+    }
+    .item .box_1{
+        height: 40%; 
+    }
+    .item .box_1 img{
+        
+        max-width: 120%; 
+    }
+    .item .box_2{
+        height: 40%; 
+    }
+    .item .box_2 img{
+        
+        max-width: 120%; 
+    }
+    .item .box_0 button{
+        top: 150%;
+    }
+    .item .box_1 button{
+        top: 150%;
+    }
+    .item .box_2 button{
+        top: 150%;
+    }
+}
+
+header{
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*border: 1px solid red;*/
+    display: flex;
+    margin-top: 60px;
+    
+}
+
+header nav {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+    padding: 0px 40px;
+}
+header nav a{
+    font-family: 'Creatball';
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+
+}
+
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color:#fff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    left:0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    
+    margin: 20px;
+    border-radius: 20px;
+
+    /*Во время перехода слайда двигается кнопка*/
+    transition:1s;
+}
+
+.dots li.active{
+    width: 10px;
+    background-color: #fff;
+}
